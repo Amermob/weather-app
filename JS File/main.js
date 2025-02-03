@@ -1,7 +1,7 @@
 document.querySelector(".btn").onclick = function () {
   let cityName = document.querySelector(".input").value;
   fetch(
-    `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=17a91727e2288c3e3ce525ccae521582&units=metric`
+    `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid={api link}&units=metric`
   )
     .then((respond) => respond.json())
     .then((data) => {
